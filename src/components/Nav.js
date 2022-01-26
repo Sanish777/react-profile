@@ -12,7 +12,7 @@ const Nav = () => {
           <div className="col-12">
             <nav className="main-nav">
               <a href="/#" className="logo">  
-                <img src="assets/images/logo-v3.png" alt="Logo" />
+                <img src="/assets/images/logo-v3.png" alt="Logo" />
               </a>
               <ul className="nav">
                 <li className="scroll-to-section">
