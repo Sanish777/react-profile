@@ -9,33 +9,33 @@ const Nav = () => {
         <div className="row">
           <div className="col-12">
             <nav className="main-nav">
-              <a href="index.html" className="logo">
+              <a href="index.html" className="logo">  
                 <img src="assets/images/logo-v3.png" alt="" />
               </a>
               <ul className="nav">
                 <li className="scroll-to-section">
-                  <a href="/#top" className="active">
+                  <Link href="/#top" className="active">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="scroll-to-section">
-                  <a href="/#about">About</a>
+                  <Link href="/#about">About</Link>
                 </li>
                 <li className="scroll-to-section">
-                  <a href="/#services">Skills</a>
+                  <Link href="/#services">Skills</Link>
                 </li>
                 {/* <li className="scroll-to-section">
-                  <a href="/#portfolio">Projects</a>
+                  <Link href="/#portfolio">Projects</Link>
                 </li>
                 <li className="scroll-to-section">
-                  <a href="/#blog">Blog</a>
+                  <Link href="/#blog">Blog</Link>
                 </li> */}
                 <li className="scroll-to-section">
-                  <a href="/#contact">Contact</a>
+                  <Link href="/#contact">Contact</Link>
                 </li>
                 <li className="scroll-to-section">
                   {/* <div className="border-first-button">
-                    <a href="/#contact">Download Resume</a>
+                    <Link href="/#contact">Download Resume</Link>
                   </div> */}
                 </li>
               </ul>
