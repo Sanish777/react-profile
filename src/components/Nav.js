@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 const Nav = () => {
   return (
     <header
@@ -11,33 +9,33 @@ const Nav = () => {
         <div className="row">
           <div className="col-12">
             <nav className="main-nav">
-              <Link to="javascript:void(0);" className="logo">  
-                <img src="assets/images/logo-v3.png" alt="Logo" />
-              </Link>
+              <a href="index.html" className="logo">
+                <img src="assets/images/logo-v3.png" alt="" />
+              </a>
               <ul className="nav">
                 <li className="scroll-to-section">
-                  <Link to="/#top" className="active">
+                  <a href="#top" className="active">
                     Home
-                  </Link>
+                  </a>
                 </li>
                 <li className="scroll-to-section">
-                  <Link to="/#about">About</Link>
+                  <a href="#about">About</a>
                 </li>
                 <li className="scroll-to-section">
-                  <Link to="/#services">Skills</Link>
+                  <a href="#services">Skills</a>
                 </li>
                 {/* <li className="scroll-to-section">
-                  <Link to="/#portfolio">Projects</Link>
+                  <a href="#portfolio">Projects</a>
                 </li>
                 <li className="scroll-to-section">
-                  <Link to="/#blog">Blog</Link>
+                  <a href="#blog">Blog</a>
                 </li> */}
                 <li className="scroll-to-section">
-                  <Link to="/#contact">Contact</Link>
+                  <a href="#contact">Contact</a>
                 </li>
                 <li className="scroll-to-section">
                   {/* <div className="border-first-button">
-                    <Link to="/#contact">Download Resume</Link>
+                    <a href="#contact">Download Resume</a>
                   </div> */}
                 </li>
               </ul>
