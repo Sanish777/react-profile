@@ -1,4 +1,4 @@
-import { NavHashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
@@ -11,35 +11,35 @@ const Nav = () => {
         <div className="row">
           <div className="col-12">
             <nav className="main-nav">
-              <a href="/#" className="logo">  
-                <img src="/assets/images/logo-v3.png" alt="Logo" />
-              </a>
+              <Link to="javascript:void(0);" className="logo">  
+                <img src="assets/images/logo-v3.png" alt="Logo" />
+              </Link>
               <ul className="nav">
-                {/* <li className="scroll-to-section"> */}
-                 {/* <NavHashLink to="/path#top" className="active">
+                <li className="scroll-to-section">
+                  <Link to="/#top" className="active">
                     Home
-                  </NavHashLink>
+                  </Link>
                 </li>
                 <li className="scroll-to-section">
-                 <NavHashLink to="/path#about">About</NavHashLink>
+                  <Link to="/#about">About</Link>
                 </li>
                 <li className="scroll-to-section">
-                 <NavHashLink to="/path#services">Skills</NavHashLink>
-                </li> */}
+                  <Link to="/#services">Skills</Link>
+                </li>
                 {/* <li className="scroll-to-section">
-                 <NavHashLink to="/path#portfolio">Projects</NavHashLink>
+                  <Link to="/#portfolio">Projects</Link>
                 </li>
                 <li className="scroll-to-section">
-                 <NavHashLink to="/path#blog">Blog</NavHashLink>
+                  <Link to="/#blog">Blog</Link>
                 </li> */}
-                {/* <li className="scroll-to-section">
-                 <NavHashLink to="/path#contact">Contact</NavHashLink>
+                <li className="scroll-to-section">
+                  <Link to="/#contact">Contact</Link>
                 </li>
-                <li className="scroll-to-section"> */}
+                <li className="scroll-to-section">
                   {/* <div className="border-first-button">
-                   <NavHashLink to="/path#contact">Download Resume</NavHashLink>
+                    <Link to="/#contact">Download Resume</Link>
                   </div> */}
-                {/* </li> */}
+                </li>
               </ul>
               <a className="menu-trigger">
                 <span>Menu</span>
