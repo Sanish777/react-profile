@@ -17,9 +17,6 @@ function App() {
     <Slider/>
      <About/>
     <Skills/>
-    {/*<Quote/>
-    <Portfolio/>
-    <Blog/>*/}
     <Contact/> 
     </div>
   );
