@@ -3,7 +3,7 @@ import AboutDetail from "./AboutDetail";
 
 const About = () => {
 
-  const { error, isPending, data:abouts } = useFetch('http://portfolio-me-app.herokuapp.com/api/homeSettings');
+  const { error, isPending, data:abouts } = useFetch('https://portfolio-me-app.herokuapp.com/api/homeSettings');
 
     return ( 
         <div id="about" class="about section">

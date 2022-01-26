@@ -7,7 +7,7 @@ toast.configure()
 
 const Contact = () => {
 
-  const { error, isPending, data:contacts } = useFetch('http://portfolio-me-app.herokuapp.com/api/homeSettings');
+  const { error, isPending, data:contacts } = useFetch('https://portfolio-me-app.herokuapp.com/api/homeSettings');
 
     const mystyle = {
       width: "110%",
@@ -24,7 +24,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const blog = { name, email, subject, message };
-    fetch('http://portfolio-me-app.herokuapp.com/api/contact', {
+    fetch('https://portfolio-me-app.herokuapp.com/api/contact', {
         method: 'POST',
         body: JSON.stringify(blog),
         headers: {

@@ -4,7 +4,7 @@ import SliderDetail from "./SliderDetail";
 
 const Slider = () => {
 
-  const { error, isPending, data:blogs } = useFetch('http://portfolio-me-app.herokuapp.com/api/homeSettings');
+  const { error, isPending, data:blogs } = useFetch('https://portfolio-me-app.herokuapp.com/api/homeSettings');
     return ( 
         <div
       className="main-banner wow fadeIn"
