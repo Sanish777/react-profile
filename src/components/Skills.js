@@ -120,7 +120,7 @@ const Skills = () => {
                               <div class="row">
                                 <div class="col-lg-6 align-self-center">
                                   <div class="left-text">
-                                    <h4>PHP Programming</h4>
+                                    <h4>JS Programming</h4>
                                     {/* <p>
                                       List of Experience from PHP
                                     </p> */}
