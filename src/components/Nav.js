@@ -15,8 +15,8 @@ const Nav = () => {
                 <img src="/assets/images/logo-v3.png" alt="Logo" />
               </a>
               <ul className="nav">
-                <li className="scroll-to-section">
-                 <NavHashLink to="/path#top" className="active">
+                {/* <li className="scroll-to-section"> */}
+                 {/* <NavHashLink to="/path#top" className="active">
                     Home
                   </NavHashLink>
                 </li>
@@ -25,21 +25,21 @@ const Nav = () => {
                 </li>
                 <li className="scroll-to-section">
                  <NavHashLink to="/path#services">Skills</NavHashLink>
-                </li>
+                </li> */}
                 {/* <li className="scroll-to-section">
                  <NavHashLink to="/path#portfolio">Projects</NavHashLink>
                 </li>
                 <li className="scroll-to-section">
                  <NavHashLink to="/path#blog">Blog</NavHashLink>
                 </li> */}
-                <li className="scroll-to-section">
+                {/* <li className="scroll-to-section">
                  <NavHashLink to="/path#contact">Contact</NavHashLink>
                 </li>
-                <li className="scroll-to-section">
+                <li className="scroll-to-section"> */}
                   {/* <div className="border-first-button">
                    <NavHashLink to="/path#contact">Download Resume</NavHashLink>
                   </div> */}
-                </li>
+                {/* </li> */}
               </ul>
               <a className="menu-trigger">
                 <span>Menu</span>
