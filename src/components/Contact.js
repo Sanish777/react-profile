@@ -72,7 +72,7 @@ const Contact = () => {
                   { error && <div>{ error }</div> }
                     { isPending && <div>Loading...</div> }
                     { contacts && contacts.data.map((contact) =>(
-                        <iframe src={contact.location}
+                        <iframe title="My Location" src={contact.location}
                         style={mystyle} allowFullScreen></iframe>
                         ))
                     }
