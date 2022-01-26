@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
 
 const Nav = () => {
   return (
@@ -16,28 +16,28 @@ const Nav = () => {
               </a>
               <ul className="nav">
                 <li className="scroll-to-section">
-                  <Link href="/path#top" className="active">
+                 <NavHashLink to="/path#top" className="active">
                     Home
-                  </Link>
+                  </NavHashLink>
                 </li>
                 <li className="scroll-to-section">
-                  <Link href="/path#about">About</Link>
+                 <NavHashLink to="/path#about">About</NavHashLink>
                 </li>
                 <li className="scroll-to-section">
-                  <Link href="/path#services">Skills</Link>
+                 <NavHashLink to="/path#services">Skills</NavHashLink>
                 </li>
                 {/* <li className="scroll-to-section">
-                  <Link href="/path#portfolio">Projects</Link>
+                 <NavHashLink to="/path#portfolio">Projects</NavHashLink>
                 </li>
                 <li className="scroll-to-section">
-                  <Link href="/path#blog">Blog</Link>
+                 <NavHashLink to="/path#blog">Blog</NavHashLink>
                 </li> */}
                 <li className="scroll-to-section">
-                  <Link href="/path#contact">Contact</Link>
+                 <NavHashLink to="/path#contact">Contact</NavHashLink>
                 </li>
                 <li className="scroll-to-section">
                   {/* <div className="border-first-button">
-                    <Link href="/path#contact">Download Resume</Link>
+                   <NavHashLink to="/path#contact">Download Resume</NavHashLink>
                   </div> */}
                 </li>
               </ul>
