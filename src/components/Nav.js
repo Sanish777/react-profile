@@ -16,28 +16,28 @@ const Nav = () => {
               </a>
               <ul className="nav">
                 <li className="scroll-to-section">
-                  <Link href="#top" className="active">
+                  <Link href="/path#top" className="active">
                     Home
                   </Link>
                 </li>
                 <li className="scroll-to-section">
-                  <Link href="#about">About</Link>
+                  <Link href="/path#about">About</Link>
                 </li>
                 <li className="scroll-to-section">
-                  <Link href="#services">Skills</Link>
+                  <Link href="/path#services">Skills</Link>
                 </li>
                 {/* <li className="scroll-to-section">
-                  <Link href="#portfolio">Projects</Link>
+                  <Link href="/path#portfolio">Projects</Link>
                 </li>
                 <li className="scroll-to-section">
-                  <Link href="#blog">Blog</Link>
+                  <Link href="/path#blog">Blog</Link>
                 </li> */}
                 <li className="scroll-to-section">
-                  <Link href="#contact">Contact</Link>
+                  <Link href="/path#contact">Contact</Link>
                 </li>
                 <li className="scroll-to-section">
                   {/* <div className="border-first-button">
-                    <Link href="#contact">Download Resume</Link>
+                    <Link href="/path#contact">Download Resume</Link>
                   </div> */}
                 </li>
               </ul>
