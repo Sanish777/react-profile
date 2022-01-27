@@ -796,7 +796,7 @@ header
     color: #ffff !important;
   }
   .header-area .main-nav .nav li a:hover {
-    background: #eee !important;
+    background: #26292b !important;
     color: #4966cf!important;
   }
   .header-area .main-nav .nav li.submenu ul {
@@ -1342,6 +1342,7 @@ Services Style
 
 .services .icon img {
   margin-bottom: 10px;
+  border-radius: 10px;
   max-width: 60px;
   min-width: 60px;
 }
@@ -1354,7 +1355,7 @@ Services Style
 .services .naccs .menu div {
   color: #fdfdfd;
   margin: 0px;
-  width: 15%;
+  width: 21%;
   font-size: 20px;
   font-weight: 700;
   display: inline-block;
@@ -1926,7 +1927,12 @@ form#contact #map iframe {
 }
 
 .fill-form {
-  padding: 80px 60px 80px 30px;
+  padding: 80px 20px 80px 40px;
+}
+@media (max-width: 767px) {
+  .fill-form {
+    padding: 80px 2px 80px 2px !important;
+  }
 }
 
 .fill-form .info-post {
@@ -2166,6 +2172,7 @@ responsive
     padding: 5px;
   }
   .services .icon img {
+    border-radius: 10px;
     margin: 0px;
   }
   .services ul.nacc li.active {
@@ -2221,4 +2228,19 @@ responsive
     padding: 30px;
   }
   
+}
+@media (max-width: 767px){
+.iframe-with{
+  width: 100%;
+  height: 660px;
+  border: 0;
+}
+}
+@media (min-width: 767px) {
+.iframe-with{
+
+width: 110%;
+height: 660px;
+border: 0;
+}
 }

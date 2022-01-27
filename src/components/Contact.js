@@ -9,13 +9,6 @@ const Contact = () => {
 
   const { error, isPending, data:contacts } = useFetch('https://portfolio-me-app.herokuapp.com/api/homeSettings');
 
-    const mystyle = {
-      width: "110%",
-      height: "660px",
-      frameborder: "0",
-      border: "0"
-    }
-
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
@@ -73,7 +66,7 @@ const Contact = () => {
                     { isPending && <div>Loading...</div> }
                     { contacts && contacts.data.map((contact) =>(
                         <iframe title="My Location" src={contact.location}
-                        style={mystyle} allowFullScreen></iframe>
+                        className="iframe-with" allowFullScreen></iframe>
                         ))
                     }
                   </div>
@@ -86,7 +79,6 @@ const Contact = () => {
                     { isPending && <div>Loading...</div> }
                     { contacts && <ConTactSetting contacts={contacts} /> }
                       
-
 
                       <div class="col-lg-6">
                         <fieldset>
@@ -159,7 +151,7 @@ const Contact = () => {
 export default Contact;
 const ConTactSetting = ({ contacts }) => (
   <>
-    <div class="row">
+    <div class="row" style={{margin : '0'}}>
     {contacts.data.map((contact) =>(   
         <React.Fragment>
           <div class="col-lg-6">

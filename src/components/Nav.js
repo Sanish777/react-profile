@@ -1,5 +1,19 @@
+import React, { useState } from "react";
+
 const Nav = () => {
+
+  const disStyle = {display: 'block'}
+  const hidStyle = {display : 'none'}
+  const [isActive, setActive] = useState("false");
+  const [isDisplay, setDisplay] = useState("false");
+
+  const handleToggle = () => {
+    setActive(!isActive);
+    setDisplay(!isDisplay);
+  };
+
   return (
+
     <header
       className="header-area header-sticky wow slideInDown"
       data-wow-duration="0.50s"
@@ -12,7 +26,7 @@ const Nav = () => {
               <a href="index.html" className="logo">
                 <img src="assets/images/logo-v3.png" alt="" />
               </a>
-              <ul className="nav">
+              <ul className="nav" style={isDisplay ? hidStyle : disStyle}>
                 <li className="scroll-to-section">
                   <a href="#top" className="active">
                     Home
@@ -39,7 +53,7 @@ const Nav = () => {
                   </div> */}
                 </li>
               </ul>
-              <a className="menu-trigger">
+              <a class={isActive ? "menu-trigger" : "menu-trigger active"} onClick={handleToggle}>
                 <span>Menu</span>
               </a>
             </nav>
