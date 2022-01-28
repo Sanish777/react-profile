@@ -1,6 +1,25 @@
+import useFetch from "../useFetch";
+import AboutDetail from "./AboutDetail";
+import Skeleton, {SkeletonTheme} from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+
 const Skills = () => {
+  const { error, isPending, data:abouts } = useFetch('https://portfolio-me-app.herokuapp.com/api/homeSettings');
+
     return ( 
-        <div id="services" class="services section">
+      <div id="services" class="services section">
+          { error && <div>{ error }</div> }
+          { isPending && <SkillsSkeleton/> }
+          { abouts && <SkillsData /> }
+          {/* { abouts && <SkillsSkeleton/>} */}
+        </div>
+     );
+}
+ 
+export default Skills;
+
+const SkillsData = () => {
+  return ( 
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
@@ -343,8 +362,179 @@ const Skills = () => {
             </div>
           </div>
         </div>
-      </div>
-     );
+   );
+  
 }
- 
-export default Skills;
+const SkillsSkeleton = () => {
+  return ( 
+    <SkeletonTheme baseColor="#202020" highlightColor="#444">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div
+                  class="section-heading wow fadeInDown"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  {/* <h6>Skills</h6> */}
+                  <h4><Skeleton width={330}/></h4>
+                  <div class="line-dec"></div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="naccs">
+                  <div class="grid">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="menu">
+                          <div class="first-thumb active">
+                            <div class="thumb">
+                              <Skeleton width={100} height={100}/>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="thumb">
+                            <Skeleton width={100} height={100}/>
+                            </div>
+                          </div>
+                          {/* <div>
+                            <div class="thumb">
+                              <span class="icon"
+                                ><img
+                                  src="assets/images/ruby.png"
+                                  alt=""
+                              /></span>
+                              Ruby
+                            </div>
+                          </div>
+                          <div>
+                            <div class="thumb">
+                              <span class="icon"
+                                ><img
+                                  src="assets/images/java.png"
+                                  alt=""
+                              /></span>
+                              JAVA
+                            </div>
+                          </div> */}
+                        
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <ul class="nacc">
+                          <li class="active">
+                            <div>
+                              <div class="thumb">
+                                <div class="row">
+                                  <div class="col-lg-6 align-self-center">
+                                    <div class="left-text">
+                                      <h4><Skeleton width={250}/></h4>
+                                      <div class="ticks-list">
+                                        <span>
+                                        <Skeleton width={350} count={5}/>
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 align-self-center">
+                                    <div class="right-image">
+                                      <Skeleton width={450} height={250}/>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                            <div class="thumb">
+                                <div class="row">
+                                  <div class="col-lg-6 align-self-center">
+                                    <div class="left-text">
+                                    <h4><Skeleton width={250}/></h4>
+                                      <div class="ticks-list">
+                                      <span>
+                                        <Skeleton width={350} count={5}/>
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 align-self-center">
+                                    <div class="right-image">
+                                    <Skeleton width={450} height={250}/>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                              <div class="thumb">
+                                <div class="row">
+                                  <div class="col-lg-6 align-self-center">
+                                    <div class="left-text">
+                                      <h4>Enjoy &amp; Travel</h4>
+                                      <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sedr do eiusmod deis tempor
+                                        incididunt ut labore et dolore kengan darwin
+                                        doerski token. dover lipsum lorem and the
+                                        others.
+                                      </p>
+                                      <div class="ticks-list">
+                                        <span
+                                          ><i class="fa fa-check"></i> Optimized
+                                          Template</span
+                                        >
+                                        <span
+                                          ><i class="fa fa-check"></i> Data
+                                          Info</span
+                                        >
+                                        <span
+                                          ><i class="fa fa-check"></i> SEO
+                                          Analysis</span
+                                        >
+                                        <span
+                                          ><i class="fa fa-check"></i> Data
+                                          Info</span
+                                        >
+                                        <span
+                                          ><i class="fa fa-check"></i> SEO
+                                          Analysis</span
+                                        >
+                                        <span
+                                          ><i class="fa fa-check"></i> Optimized
+                                          Template</span
+                                        >
+                                      </div>
+                                      <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sedr do eiusmod deis tempor
+                                        incididunt.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 align-self-center">
+                                    <div class="right-image">
+                                      <img
+                                        src="assets/images/services-image.jpg"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </SkeletonTheme>
+   );
+}

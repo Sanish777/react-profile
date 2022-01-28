@@ -11,7 +11,7 @@ const AboutDetail = ({abouts}) => {
                                     data-wow-duration="1s"
                                     data-wow-delay="0.5s"
                                     >
-                                    <img src="assets/images/shilotte.png" alt="About Profile" />
+                                    <img src={about.about_link} alt="About Profile" />
                                     </div>
                                 </div>
                                 <div

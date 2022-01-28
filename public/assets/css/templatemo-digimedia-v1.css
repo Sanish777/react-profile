@@ -1017,9 +1017,39 @@ Banner Style
   border-radius: 20px;
   box-shadow: 0px 0px 15px #00000073;
 }
+@media (max-width: 767px) {
 
-
-
+.main-banner .right-image .react-loading-skeleton {
+  width: 100% !important;
+  height: 250px !important;
+  overflow: hidden;
+  border-radius: 20px;
+} 
+.about-left-image .react-loading-skeleton{
+  width: 100% !important;
+  overflow: hidden;
+  height: 250px !important;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.about-right-content p .react-loading-skeleton{
+  width: 100% !important;
+}
+.services .naccs .menu div .thumb .react-loading-skeleton{
+  width: 100% !important;
+  height: 60px !important;
+}
+.ticks-list .react-loading-skeleton{
+  width: 280px !important;
+}
+.left-text h4 .react-loading-skeleton{
+  width: 180px !important;
+}
+.services ul.nacc li .right-image .react-loading-skeleton{
+  width: 100% !important;
+  border-radius: 20px ;
+}
+}
 /* 
 ---------------------------------------------
 About Style
@@ -2230,17 +2260,45 @@ responsive
   
 }
 @media (max-width: 767px){
-.iframe-with{
+.iframe-with, .iframe-with .react-loading-skeleton{
   width: 100%;
   height: 660px;
   border: 0;
 }
+.iframe-with .react-loading-skeleton{
+  border-radius: 20px;
+}
 }
 @media (min-width: 767px) {
 .iframe-with{
-
-width: 110%;
-height: 660px;
-border: 0;
+  width: 110%;
+  height: 660px;
+  border: 0;
 }
+.iframe-with .react-loading-skeleton{
+  top: -4px;
+  width: 110%;
+  height: 664px;
+  border-top-left-radius: 20px; 
+  border-bottom-left-radius: 20px; 
+  border: 0;
+}
+}
+.border-first-button.skeleton a{
+    display: inline-block !important;
+    padding: 5px 10px !important;
+    color: #fdfdfd !important;
+    border-radius: 100%;
+    font-weight: 500 !important;
+    border: none !important;
+    letter-spacing: 0.3px !important;
+    transition: all .5s;
+    font-size: 26px;
+    width: 52px;
+    text-align: center;
+    margin-left: 10px;
+}
+.border-first-button.skeleton a:hover{
+background-color:#26292b  !important;
+box-shadow: none !important;
 }

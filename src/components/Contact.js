@@ -3,6 +3,7 @@ import React from 'react';
 import { useState } from "react";
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 toast.configure()
 
 const Contact = () => {
@@ -45,7 +46,10 @@ const Contact = () => {
               data-wow-delay="0.5s"
             >
               {/* <h6>Contact Us</h6> */}
-              <h4>Get In Touch with <em>Me</em></h4>
+              { error && <div>{ error }</div> }
+                    { isPending && <h4><Skeleton baseColor="#202020" highlightColor="#444" width={400}/></h4> }
+                    { contacts &&               <h4>Get In Touch with <em>Me</em></h4>
+                    }
               <div class="line-dec"></div>
             </div>
           </div>
@@ -63,12 +67,13 @@ const Contact = () => {
                 <div class="col-lg-5">
                   <div id="map">
                   { error && <div>{ error }</div> }
-                    { isPending && <div>Loading...</div> }
+                    { isPending && <MapSkeleton/> }
                     { contacts && contacts.data.map((contact) =>(
                         <iframe title="My Location" src={contact.location}
                         className="iframe-with" allowFullScreen></iframe>
                         ))
                     }
+                    {/* { contacts && <MapSkeleton/>} */}
                   </div>
                 </div>
                 <div class="col-lg-7">
@@ -76,9 +81,9 @@ const Contact = () => {
                     <div class="row">
 
                     { error && <div>{ error }</div> }
-                    { isPending && <div>Loading...</div> }
+                    { isPending && <ContactSkeleton/> }
                     { contacts && <ConTactSetting contacts={contacts} /> }
-                      
+                    {/* { contacts && <ContactSkeleton/> } */}
 
                       <div class="col-lg-6">
                         <fieldset>
@@ -149,6 +154,39 @@ const Contact = () => {
 }
  
 export default Contact;
+const  MapSkeleton= () => {
+  return ( 
+    <SkeletonTheme baseColor="#202020" highlightColor="#444">
+      <Skeleton containerClassName="iframe-with"/>
+    </SkeletonTheme>
+   );
+};
+const ContactSkeleton = () => {
+  return (
+    <SkeletonTheme baseColor="#202020" highlightColor="#444">
+    <div class="row" style={{margin : '0'}}>
+        <React.Fragment>
+          <div class="col-lg-6">
+                        <div class="info-post">
+                          <div class="icon">
+                            <Skeleton width={63} height={63} circle/>
+                            <a href="javascript.void()"><Skeleton width={150} count={2}/></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="info-post">
+                          <div class="icon">
+                          <Skeleton width={63} height={63} circle/>
+                          <a href="javascript.void()"><Skeleton width={150} count={2}/></a>
+                          </div>
+                        </div>
+                      </div>
+        </React.Fragment>                   
+    </div>
+    </SkeletonTheme>
+  );
+}
 const ConTactSetting = ({ contacts }) => (
   <>
     <div class="row" style={{margin : '0'}}>

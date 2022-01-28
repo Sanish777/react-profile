@@ -20,10 +20,13 @@ const useFetch = (url) => {
             return res.json();
           })
           .then((data) => {
-            setData(data);
+            const timer = setTimeout(() => {
+              setData(data);
             setIsPending(false);
             setError(null);
-          })
+            }, 2000);
+            return () => clearTimeout(timer);
+          },[])
           .catch((err) => {
             if (err.name === "AbortError") {
               console.log("Fetch Aborted");
