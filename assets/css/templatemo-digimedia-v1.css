@@ -1014,7 +1014,7 @@ Banner Style
 
 .main-banner .right-image img {
   max-width: 641px;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0px 0px 15px #00000073;
 }
 @media (max-width: 767px) {
@@ -1023,13 +1023,13 @@ Banner Style
   width: 100% !important;
   height: 250px !important;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 15px;
 } 
 .about-left-image .react-loading-skeleton{
   width: 100% !important;
   overflow: hidden;
   height: 250px !important;
-  border-radius: 20px;
+  border-radius: 15px;
   margin-bottom: 20px;
 }
 .about-right-content p .react-loading-skeleton{
@@ -1047,7 +1047,7 @@ Banner Style
 }
 .services ul.nacc li .right-image .react-loading-skeleton{
   width: 100% !important;
-  border-radius: 20px ;
+  border-radius: 15px ;
 }
 }
 /* 
@@ -1062,7 +1062,7 @@ About Style
 
 .about-left-image img {
   margin-right: 45px;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0px 0px 15px #00000073;
 }
 
@@ -1372,9 +1372,12 @@ Services Style
 
 .services .icon img {
   margin-bottom: 10px;
-  border-radius: 10px;
-  max-width: 60px;
-  min-width: 60px;
+    border-radius: 10px;
+    max-width: 60px;
+    min-width: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    object-fit: cover;
 }
 
 .services .naccs .menu {
@@ -1443,7 +1446,11 @@ Services Style
 
 .services ul.nacc li .right-image img {
   max-width: 420px;
+  max-height: 250px;
+  min-width: 420px;
+  min-height: 250px;
   float: right;
+  border-radius: 15px;
 }
 
 .services .nacc .thumb h4 {
@@ -1994,7 +2001,7 @@ form#contact #map iframe {
 .fill-form .info-post:hover {
   color: #4966cf;
   box-shadow: 0px 0px 15px #00000073;
-  border-radius: 20px;
+  border-radius: 15px;
   
 }
 
@@ -2266,7 +2273,7 @@ responsive
   border: 0;
 }
 .iframe-with .react-loading-skeleton{
-  border-radius: 20px;
+  border-radius: 15px;
 }
 }
 @media (min-width: 767px) {
