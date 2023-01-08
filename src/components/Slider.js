@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { useEffect, useState } from "react";
@@ -51,7 +52,7 @@ const Skeletonn = () => {
                     </div>
                     <div className="col-lg-12">
                       <div className="border-first-button skeleton scroll-to-section">
-                        <a>
+                        <a href="#"> 
                           <Skeleton
                             containerClassName="skeleton-anchor"
                             width={50}
@@ -59,7 +60,7 @@ const Skeletonn = () => {
                             circle
                           />
                         </a>
-                        <a>
+                        <a href="#">
                           <Skeleton
                             containerClassName="skeleton-anchor"
                             width={50}
@@ -67,7 +68,7 @@ const Skeletonn = () => {
                             circle
                           />
                         </a>
-                        <a>
+                        <a href="#">
                           <Skeleton
                             containerClassName="skeleton-anchor"
                             width={50}
@@ -75,7 +76,7 @@ const Skeletonn = () => {
                             circle
                           />
                         </a>
-                        <a>
+                        <a href="#">
                           <Skeleton
                             containerClassName="skeleton-anchor"
                             width={50}
@@ -83,7 +84,7 @@ const Skeletonn = () => {
                             circle
                           />
                         </a>
-                        <a>
+                        <a href="#">
                           <Skeleton
                             containerClassName="skeleton-anchor"
                             width={50}

@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 
 const Nav = () => {
@@ -24,7 +23,7 @@ const Nav = () => {
         <div className="row">
           <div className="col-12">
             <nav className="main-nav">
-              <a href="/" className="logo">
+              <a href="index.html" className="logo">
                 <img src="assets/images/logo-v3.png" alt="" />
               </a>
               <ul className="nav" style={isDisplay ? hidStyle : disStyle}>
