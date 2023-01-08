@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 
 const Nav = () => {
@@ -53,7 +54,7 @@ const Nav = () => {
                   </div> */}
                 </li>
               </ul>
-              <a class={isActive ? "menu-trigger" : "menu-trigger active"} onClick={handleToggle}>
+              <a href="#" class={isActive ? "menu-trigger" : "menu-trigger active"} onClick={handleToggle}>
                 <span>Menu</span>
               </a>
             </nav>
