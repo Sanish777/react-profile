@@ -1447,8 +1447,6 @@ Services Style
 .services ul.nacc li .right-image img {
   max-width: 420px;
   max-height: 250px;
-  min-width: 420px;
-  min-height: 250px;
   float: right;
   border-radius: 15px;
 }
