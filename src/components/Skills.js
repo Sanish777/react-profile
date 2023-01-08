@@ -69,14 +69,14 @@ const SkillsData = () => {
                       </div>
                     </div>
                     <div>
-                      <div class="thumb">
+                      {/* <div class="thumb">
                         <span class="icon">
                           <img src="assets/images/angular.svg" alt="" />
                         </span>
                         Typescript
                       </div>
                     </div>
-                    <div class="mt-4">
+                    <div class="mt-4"> */}
                       <div class="thumb">
                         <span class="icon">
                           <img src="assets/images/docker_img.png" alt="" />
@@ -106,7 +106,7 @@ const SkillsData = () => {
                                   <span>
                                     <i class="fa fa-check"></i>Lumen Micro
                                     Framework
-                                  </span>
+                                  </span><br/>
                                   <span>
                                     <i class="fa fa-check"></i> Core PHP
                                     Programming
@@ -114,11 +114,11 @@ const SkillsData = () => {
                                   <span>
                                     <i class="fa fa-check"></i> PHP Programming
                                     with OOP (MVC)
-                                  </span>
+                                  </span><br/>
                                   <span>
                                     <i class="fa fa-check"></i> Build Restful
                                     API
-                                  </span>
+                                  </span><br/>
                                   <span>
                                     <i class="fa fa-check"></i>Frontend
                                     Intregation with Blade
@@ -152,24 +152,27 @@ const SkillsData = () => {
                                     </p> */}
                                 <div class="ticks-list">
                                   <span>
-                                    <i class="fa fa-check"></i> Knowledge on
-                                    ES6.
+                                    <i class="fa fa-check"></i> Understanding of ES6.
                                   </span>
                                   <br />
                                   <span>
-                                    <i class="fa fa-check"></i> React JS
-                                    (Learning).
+                                    <i class="fa fa-check"></i> Understanding of ChartJS.
                                   </span>
                                   <br />
                                   <span>
-                                    <i class="fa fa-check"></i> Familiar with
-                                    Vue Js.
+                                    <i class="fa fa-check"></i> Basic understading of React JS (Learning).
                                   </span>
                                   <br />
-
                                   <span>
-                                    <i class="fa fa-check"></i> Worked with JSON
-                                    Data.
+                                    <i class="fa fa-check"></i> Experience with Angular JS
+                                  </span>
+                                  <br />
+                                  <span>
+                                    <i class="fa fa-check"></i> JSON Data Manipulation.
+                                  </span>
+                                  <br />
+                                  <span>
+                                    <i class="fa fa-check"></i> Sucessfully build and release application with ionic (with angular)
                                   </span>
                                 </div>
                                 {/* <p>
@@ -200,35 +203,24 @@ const SkillsData = () => {
                                     </p> */}
                                 <div class="ticks-list">
                                   <span>
-                                    <i class="fa fa-check"></i> Laravel
-                                    Framework (MVC and Repository Pattern )
+                                    <i class="fa fa-check"></i> Ruby on Rails Framework
                                   </span>
                                   <span>
-                                    <i class="fa fa-check"></i>Lumen Micro
-                                    Framework
+                                    <i class="fa fa-check"></i> Familiarity with concepts of MVC, Mocking, ORM, and RESTful
                                   </span>
                                   <span>
-                                    <i class="fa fa-check"></i> Core PHP
-                                    Programming
+                                    <i class="fa fa-check"></i> Implementation of Unit Tests (Rspecs), Stub, Mock, Webmock
                                   </span>
                                   <span>
-                                    <i class="fa fa-check"></i> PHP Programming
-                                    with OOP (MVC)
+                                    <i class="fa fa-check"></i> Implementation of RuboCop for lint and code formatter.
                                   </span>
                                   <span>
-                                    <i class="fa fa-check"></i> Build Restful
-                                    API
+                                    <i class="fa fa-check"></i> Familiar with various ruby gems and implementation
                                   </span>
                                   <span>
-                                    <i class="fa fa-check"></i>Frontend
-                                    Intregation with Blade
+                                    <i class="fa fa-check"></i> Background processing and task Scheduling [Delayed Job, Sidekiq]
                                   </span>
                                 </div>
-                                {/* <p>
-                                      Lorem ipsum dolor sit amet, consectetur
-                                      adipiscing elit, sedr do eiusmod deis tempor
-                                      incididunt.
-                                    </p> */}
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
@@ -240,7 +232,7 @@ const SkillsData = () => {
                         </div>
                       </div>
                     </li>
-                    <li>
+                    {/* <li>
                       <div>
                         <div class="thumb">
                           <div class="row">
@@ -294,7 +286,7 @@ const SkillsData = () => {
                           </div>
                         </div>
                       </div>
-                    </li>
+                    </li> */}
                     <li>
                       <div>
                       <div class="thumb">
@@ -302,40 +294,23 @@ const SkillsData = () => {
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
                                 <h4>Docker</h4>
-                                {/* <p>
-                                      List of Experience from PHP
-                                    </p> */}
                                 <div class="ticks-list">
                                   <span>
-                                    <i class="fa fa-check"></i> Laravel
-                                    Framework (MVC and Repository Pattern )
+                                    <i class="fa fa-check"></i> Dockerized the rails application.
                                   </span>
                                   <span>
-                                    <i class="fa fa-check"></i>Lumen Micro
-                                    Framework
-                                  </span>
+                                    <i class="fa fa-check"></i> Understading of YAML Files.
+                                  </span><br/>
                                   <span>
-                                    <i class="fa fa-check"></i> Core PHP
-                                    Programming
-                                  </span>
+                                    <i class="fa fa-check"></i> Experienced the Docker Hub.
+                                  </span><br/>
                                   <span>
-                                    <i class="fa fa-check"></i> PHP Programming
-                                    with OOP (MVC)
-                                  </span>
+                                    <i class="fa fa-check"></i> Familiar with docker images and containers
+                                  </span><br/>
                                   <span>
-                                    <i class="fa fa-check"></i> Build Restful
-                                    API
-                                  </span>
-                                  <span>
-                                    <i class="fa fa-check"></i>Frontend
-                                    Intregation with Blade
+                                    <i class="fa fa-check"></i> Understading with Docker CLI.
                                   </span>
                                 </div>
-                                {/* <p>
-                                      Lorem ipsum dolor sit amet, consectetur
-                                      adipiscing elit, sedr do eiusmod deis tempor
-                                      incididunt.
-                                    </p> */}
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">

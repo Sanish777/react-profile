@@ -134,16 +134,16 @@ const SkeletonData = () => {
                     </div>
                     <div className="col-lg-12">
                       <div className="border-first-button slider scroll-to-section">
-                        <a className="facebook" href="www.facebook.com">
+                        <a className="facebook" target="_blank" href="https://www.facebook.com/sanish.me/">
                           <i className="fa fa-facebook"></i>
                         </a>
-                        <a className="instagram" href="www.instagram.com">
+                        <a className="instagram" target="_blank" href="https://www.instagram.com/sanish_shakya_/">
                           <i className="fa fa-instagram"></i>
                         </a>
-                        <a className="github" href="www.github.com">
+                        <a className="github" target="_blank" href="https://github.com/SanishShakya">
                           <i className="fa fa-github"></i>
                         </a>
-                        <a className="linkedin" href="www.linkedin.com">
+                        <a className="linkedin" target="_blank" href="https://np.linkedin.com/in/sanish-shakya-3320b2198">
                           <i className="fa fa-linkedin"></i>
                         </a>
                         <a className="gmail" href="mailto:shakya.sanish8198@gmail.com">
