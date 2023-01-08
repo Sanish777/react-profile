@@ -11,7 +11,7 @@ const AboutDetail = ({abouts}) => {
                                     data-wow-duration="1s"
                                     data-wow-delay="0.5s"
                                     >
-                                    <img src={about.about_link} alt="About Profile" />
+                                    <img src="www.google.com" alt="About Profile" />
                                     </div>
                                 </div>
                                 <div
@@ -22,11 +22,11 @@ const AboutDetail = ({abouts}) => {
                                     <div class="about-right-content">
                                     <div class="section-heading">
                                         {/* <h6>About</h6> */}
-                                        <h4>{about.about_title}</h4>
+                                        <h4>About Us</h4>
                                         <div class="line-dec"></div>
                                     </div>
                                     <p>
-                                       {about.about_desc}
+                                       Lorem Ipsum
                                     </p>
                                     <div class="row">
                                         <div class="col-lg-4 col-sm-4">
@@ -35,7 +35,7 @@ const AboutDetail = ({abouts}) => {
                                             data-wow-duration="1s"
                                             data-wow-delay="0s"
                                         >
-                                            <div class="progress" data-percentage={about.skill1}>
+                                            <div class="progress" data-percentage="60">
                                             <span class="progress-left">
                                                 <span class="progress-bar"></span>
                                             </span>
@@ -44,7 +44,7 @@ const AboutDetail = ({abouts}) => {
                                             </span>
                                             <div class="progress-value">
                                                 <div>
-                                                {about.skill1}%<br />
+                                                60%<br />
                                                 <span>Backend</span>
                                                 </div>
                                             </div>

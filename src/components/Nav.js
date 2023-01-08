@@ -44,9 +44,9 @@ const Nav = () => {
                 <li className="scroll-to-section">
                   <a href="#blog">Blog</a>
                 </li> */}
-                <li className="scroll-to-section">
+                {/* <li className="scroll-to-section">
                   <a href="#contact">Contact</a>
-                </li>
+                </li> */}
                 <li className="scroll-to-section">
                   {/* <div className="border-first-button">
                     <a href="#contact">Download Resume</a>
