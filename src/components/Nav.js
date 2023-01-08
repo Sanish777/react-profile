@@ -23,7 +23,7 @@ const Nav = () => {
         <div className="row">
           <div className="col-12">
             <nav className="main-nav">
-              <a href="index.html" className="logo">
+              <a href="/" className="logo">
                 <img src="assets/images/logo-v3.png" alt="" />
               </a>
               <ul className="nav" style={isDisplay ? hidStyle : disStyle}>
