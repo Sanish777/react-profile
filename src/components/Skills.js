@@ -61,25 +61,29 @@ const SkillsData = () => {
                       </div>
                     </div>
                     <div>
-                          <div class="thumb">
-                            <span class="icon"
-                              ><img
-                                src="assets/images/ruby.png"
-                                alt=""
-                            /></span>
-                            Ruby
-                          </div>
-                        </div>
-                        <div>
-                          <div class="thumb">
-                            <span class="icon"
-                              ><img
-                                src="assets/images/angular.svg"
-                                alt=""
-                            /></span>
-                            Typescript
-                          </div>
-                        </div>
+                      <div class="thumb">
+                        <span class="icon">
+                          <img src="assets/images/ruby.png" alt="" />
+                        </span>
+                        Ruby
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <span class="icon">
+                          <img src="assets/images/angular.svg" alt="" />
+                        </span>
+                        Typescript
+                      </div>
+                    </div>
+                    <div class="mt-4">
+                      <div class="thumb">
+                        <span class="icon">
+                          <img src="assets/images/docker_img.png" alt="" />
+                        </span>
+                        Docker
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-lg-12">
@@ -129,10 +133,7 @@ const SkillsData = () => {
                             </div>
                             <div class="col-lg-6 align-self-center">
                               <div class="right-image">
-                                <img
-                                  src="assets/images/php.svg"
-                                  alt=""
-                                />
+                                <img src="assets/images/php.svg" alt="" />
                               </div>
                             </div>
                           </div>
@@ -188,8 +189,8 @@ const SkillsData = () => {
                       </div>
                     </li>
                     <li>
-                          <div>
-                          <div class="thumb">
+                      <div>
+                        <div class="thumb">
                           <div class="row">
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
@@ -232,82 +233,20 @@ const SkillsData = () => {
                             </div>
                             <div class="col-lg-6 align-self-center">
                               <div class="right-image">
-                                <img
-                                  src="assets/images/ruby_back.png"
-                                  alt=""
-                                />
+                                <img src="assets/images/ruby_back.png" alt="" />
                               </div>
                             </div>
                           </div>
                         </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <div class="thumb">
-                              <div class="row">
-                                <div class="col-lg-6 align-self-center">
-                                  <div class="left-text">
-                                    <h4>Online Shopping &amp; Tracking ID</h4>
-                                    <p>
-                                      Lorem ipsum dolor sit amet, consectetur
-                                      adipiscing elit, sedr do eiusmod deis tempor
-                                      incididunt ut labore et dolore kengan darwin
-                                      doerski token. dover lipsum lorem and the
-                                      others.
-                                    </p>
-                                    <div class="ticks-list">
-                                      <span
-                                        ><i class="fa fa-check"></i> Optimized
-                                        Template</span
-                                      >
-                                      <span
-                                        ><i class="fa fa-check"></i> Data
-                                        Info</span
-                                      >
-                                      <span
-                                        ><i class="fa fa-check"></i> SEO
-                                        Analysis</span
-                                      >
-                                      <span
-                                        ><i class="fa fa-check"></i> Data
-                                        Info</span
-                                      >
-                                      <span
-                                        ><i class="fa fa-check"></i> SEO
-                                        Analysis</span
-                                      >
-                                      <span
-                                        ><i class="fa fa-check"></i> Optimized
-                                        Template</span
-                                      >
-                                    </div>
-                                    <p>
-                                      Lorem ipsum dolor sit amet, consectetur
-                                      adipiscing elit, sedr do eiusmod deis tempor
-                                      incididunt.
-                                    </p>
-                                  </div>
-                                </div>
-                                <div class="col-lg-6 align-self-center">
-                                  <div class="right-image">
-                                    <img
-                                      src="assets/images/typescript_back.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
+                      </div>
+                    </li>
                     <li>
                       <div>
                         <div class="thumb">
                           <div class="row">
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
-                                <h4>Enjoy &amp; Travel</h4>
+                                <h4>Online Shopping &amp; Trsacking ID</h4>
                                 <p>
                                   Lorem ipsum dolor sit amet, consectetur
                                   adipiscing elit, sedr do eiusmod deis tempor
@@ -347,9 +286,61 @@ const SkillsData = () => {
                             <div class="col-lg-6 align-self-center">
                               <div class="right-image">
                                 <img
-                                  src="assets/images/services-image.jpg"
+                                  src="assets/images/typescript_back.png"
                                   alt=""
                                 />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                      <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>Docker</h4>
+                                {/* <p>
+                                      List of Experience from PHP
+                                    </p> */}
+                                <div class="ticks-list">
+                                  <span>
+                                    <i class="fa fa-check"></i> Laravel
+                                    Framework (MVC and Repository Pattern )
+                                  </span>
+                                  <span>
+                                    <i class="fa fa-check"></i>Lumen Micro
+                                    Framework
+                                  </span>
+                                  <span>
+                                    <i class="fa fa-check"></i> Core PHP
+                                    Programming
+                                  </span>
+                                  <span>
+                                    <i class="fa fa-check"></i> PHP Programming
+                                    with OOP (MVC)
+                                  </span>
+                                  <span>
+                                    <i class="fa fa-check"></i> Build Restful
+                                    API
+                                  </span>
+                                  <span>
+                                    <i class="fa fa-check"></i>Frontend
+                                    Intregation with Blade
+                                  </span>
+                                </div>
+                                {/* <p>
+                                      Lorem ipsum dolor sit amet, consectetur
+                                      adipiscing elit, sedr do eiusmod deis tempor
+                                      incididunt.
+                                    </p> */}
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/docker_wall.png" alt="" />
                               </div>
                             </div>
                           </div>

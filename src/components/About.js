@@ -117,7 +117,7 @@ const AboutDataField = () => {
                     <h4>About Us</h4>
                     <div className="line-dec"></div>
                   </div>
-                  <p>Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum</p>
+                  <p>I'm a Full Stack Developer from Lalitpur, Nepal. I appreciate simplifying complicated problems into simple, appealing, and intuitive solutions. It is my responsibility to create user-friendly and functional websites and mobile applications. I attempt to deliver your message and brand in the most imaginative way possible</p>
                   <div className="row">
                     <div className="col-lg-4 col-sm-4">
                       <div
@@ -125,7 +125,7 @@ const AboutDataField = () => {
                         data-wow-duration="1s"
                         data-wow-delay="0s"
                       >
-                        <div className="progress" data-percentage="60">
+                        <div className="progress" data-percentage="80">
                           <span className="progress-left">
                             <span className="progress-bar"></span>
                           </span>
@@ -134,7 +134,7 @@ const AboutDataField = () => {
                           </span>
                           <div className="progress-value">
                             <div>
-                              60%
+                              80%
                               <br />
                               <span>Backend</span>
                             </div>
@@ -148,7 +148,7 @@ const AboutDataField = () => {
                         data-wow-duration="1s"
                         data-wow-delay="0s"
                       >
-                        <div className="progress" data-percentage="60">
+                        <div className="progress" data-percentage="80">
                           <span className="progress-left">
                             <span className="progress-bar"></span>
                           </span>
@@ -157,7 +157,7 @@ const AboutDataField = () => {
                           </span>
                           <div className="progress-value">
                             <div>
-                              60%<br />
+                              80%<br />
                               <span>Frontend</span>
                             </div>
                           </div>
@@ -170,7 +170,7 @@ const AboutDataField = () => {
                         data-wow-duration="1s"
                         data-wow-delay="0s"
                       >
-                        <div className="progress" data-percentage="50">
+                        <div className="progress" data-percentage="30">
                           <span className="progress-left">
                             <span className="progress-bar"></span>
                           </span>
@@ -179,7 +179,7 @@ const AboutDataField = () => {
                           </span>
                           <div className="progress-value">
                             <div>
-                              50%<br />
+                              30%<br />
                               <span>Server</span>
                             </div>
                           </div>

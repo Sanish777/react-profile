@@ -130,7 +130,7 @@ const SkeletonData = () => {
                     <div className="col-lg-12">
                       <h6>Hello! I am</h6>
                       <h2>Sanish Shakya</h2>
-                      <p>this desc this desc this desc this desc this desc this desc this desc this desc this desc this desc this desc this desc this desc </p>
+                      <p>Experienced software engineer with practical knowledge of the service and IT sectors. competent in frontend and backend work, with a working understanding of servers. A strong engineering professional with a BIM degree.</p>
                     </div>
                     <div className="col-lg-12">
                       <div className="border-first-button slider scroll-to-section">
